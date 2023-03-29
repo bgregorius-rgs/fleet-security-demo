@@ -1,0 +1,6 @@
+defaultNamespace: cattle-neuvector-system
+helm:
+  repo: https://neuvector.github.io/neuvector-helm/
+  chart: crd
+  version: 5.1.1
+  releaseName: neuvector-crd

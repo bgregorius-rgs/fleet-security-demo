@@ -1,0 +1,13 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: neuvector
+  namespace: fleet-default
+spec:
+  repo: ssh://git@git-ssh.atoy.lol/home/cert-manager.git
+  clientSecretName: private-key
+  targets:
+  - clusterGroup: secured
+  paths:
+  - "./neuvector-crds"
+  - "./neuvector-core"
