@@ -6,6 +6,3 @@ helm:
   releaseName: neuvector-core
   valuesFiles:
   - values.yaml
-
-# dependsOn:
-# - name: neuvector-neuvector-crds 

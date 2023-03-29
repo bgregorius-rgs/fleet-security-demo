@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: neuvector
+  namespace: fleet-default
+spec:
+  repo: https://github.com/atoy3731/neuvector-fleet-demo.git
+  branch: main
+  targets:
+  - clusterGroup: secured
+  paths:
+  - "./neuvector/neuvector-core"

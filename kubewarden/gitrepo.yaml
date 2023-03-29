@@ -1,7 +1,7 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: neuvector
+  name: kubewarden
   namespace: fleet-default
 spec:
   repo: https://github.com/atoy3731/neuvector-fleet-demo.git
@@ -9,5 +9,8 @@ spec:
   targets:
   - clusterGroup: secured
   paths:
-  # - "./neuvector-crds"
-  - "./neuvector-core"
+  - "./kubewarden/kubewarden/cert-manager"
+  - "./kubewarden/kubewarden/crds"
+  - "./kubewarden/kubewarden/controller"
+  - "./kubewarden/kubewarden/defaults"
+  - "./kubewarden/kubewarden/policies"

@@ -1,0 +1,7 @@
+defaultNamespace: kubewarden
+kustomize:
+  dir: ./resources
+dependsOn:
+  - name: kubewarden-kubewarden-kubewarden-crds
+  - name: kubewarden-kubewarden-kubewarden-controller
+  - name: kubewarden-kubewarden-kubewarden-defaults

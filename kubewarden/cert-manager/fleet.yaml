@@ -1,0 +1,10 @@
+defaultNamespace: cert-manager
+helm:
+  repo: https://charts.jetstack.io
+  chart: cert-manager
+  version: 1.9.1
+  releaseName: cert-manager
+  valuesFiles:
+    - values.yaml
+dependsOn:
+  - name: kubewarden-namespaces
