@@ -72,7 +72,7 @@ To clean up your cluster, run the following on the `local` cluster:
 
 ## More Information
 
-* (Rancher Fleet)[https://fleet.rancher.io/]
-* (Neuvector)[https://open-docs.neuvector.com/]
-* (Kubewarden)[https://docs.kubewarden.io/]
-* (Kubewarden Istio Policy)[https://github.com/atoy3731/kubewarden-istio-policy-rust]
+* [Rancher Fleet](https://fleet.rancher.io/)
+* [Neuvector](https://open-docs.neuvector.com/)
+* [Kubewarden](https://docs.kubewarden.io/)
+* [Kubewarden Istio Policy](https://github.com/atoy3731/kubewarden-istio-policy-rust)
