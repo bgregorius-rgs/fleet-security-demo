@@ -1,5 +1,9 @@
 
 
+# Policy to enforce Istio Injection
+# Namespaces require "istio-injection=enabled" label
+# Pods require no "sidecar.istio.io/inject=false" label
+
 apiVersion: policies.kubewarden.io/v1
 kind: ClusterAdmissionPolicy
 metadata:
@@ -7,6 +11,7 @@ metadata:
 spec:
   module: "registry://ghcr.io/atoy3731/policies/istio:latest"
   settings:
+    # Excluded namespaces
     excluded_namespaces:
     - kubewarden
     - istio-system
@@ -15,8 +20,10 @@ spec:
     - kube-system
     - cattle-fleet-system
     - cert-manager
-    excluded_pod_labels:
-      istioEnforcing: testing
+
+    # Excluded pods (based on labels)
+    excluded_pod_labels: {}
+      # foo: bar
   rules:
     - apiGroups:
         - ""
