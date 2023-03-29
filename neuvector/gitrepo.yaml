@@ -9,4 +9,5 @@ spec:
   targets:
   - clusterGroup: secured
   paths:
-  - "./neuvector/neuvector-core"
+  - "./neuvector/crd"
+  - "./neuvector/core"
