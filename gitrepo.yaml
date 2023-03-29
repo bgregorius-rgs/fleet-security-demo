@@ -4,8 +4,8 @@ metadata:
   name: neuvector
   namespace: fleet-default
 spec:
-  repo: ssh://git@git-ssh.atoy.lol/home/cert-manager.git
-  clientSecretName: private-key
+  repo: https://github.com/atoy3731/neuvector-fleet-demo.git
+  branch: main
   targets:
   - clusterGroup: secured
   paths:

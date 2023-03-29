@@ -2,7 +2,7 @@ defaultNamespace: cattle-neuvector-system
 helm:
   repo: https://neuvector.github.io/neuvector-helm/
   chart: core
-  version: 5.1.1
+  version: 2.4.2
   releaseName: neuvector-core
   valuesFile:
   - values.yaml
