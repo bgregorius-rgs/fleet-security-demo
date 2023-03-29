@@ -4,7 +4,7 @@ helm:
   chart: core
   version: 2.4.2
   releaseName: neuvector-core
-  valuesFile:
+  valuesFiles:
   - values.yaml
 
 # dependsOn:
