@@ -9,3 +9,6 @@ k3s:
 controller:
   ranchersso:
     enabled: true
+
+crdwebhook:
+  enabled: false
