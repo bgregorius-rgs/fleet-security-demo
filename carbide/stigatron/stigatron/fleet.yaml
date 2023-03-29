@@ -3,3 +3,6 @@ helm:
   repo: https://rancherfederal.github.io/carbide-charts/
   chart: stigatron
   releaseName: stigatron
+
+dependsOn: 
+- name: stigatron-carbide-stigatron-cis-crd
