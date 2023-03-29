@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: airgapped-docs
+  namespace: fleet-default
+spec:
+  repo: https://github.com/atoy3731/fleet-security-demo.git
+  branch: main
+  targets:
+  - clusterSelector: {}
+  paths:
+  - "./carbide/airgapped-docs/helm"

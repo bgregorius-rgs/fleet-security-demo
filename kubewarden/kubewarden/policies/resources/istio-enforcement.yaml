@@ -21,6 +21,8 @@ spec:
     - cattle-fleet-system
     - cert-manager
     - cattle-neuvector-system
+    - carbide-stigatron-system
+    - carbide-docs-system
 
     # Excluded pods (based on labels)
     excluded_pod_labels: {}
