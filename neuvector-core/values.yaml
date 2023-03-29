@@ -4,4 +4,8 @@ k3s:
   enabled: true
 controller:
   ranchersso:
-    enabled: true	
+    enabled: true
+
+global:
+  cattle:
+    url: https://rancher-aws.atoy.dev
