@@ -20,6 +20,7 @@ spec:
     - kube-system
     - cattle-fleet-system
     - cert-manager
+    - cattle-neuvector-system
 
     # Excluded pods (based on labels)
     excluded_pod_labels: {}
