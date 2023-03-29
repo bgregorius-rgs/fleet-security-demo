@@ -1,0 +1,34 @@
+
+
+apiVersion: policies.kubewarden.io/v1
+kind: ClusterAdmissionPolicy
+metadata:
+  name: kubewarden-annotation-policy
+spec:
+  module: "ghcr.io/kubewarden/policies/safe-annotations:v0.2.6"
+  settings:
+    # List of annotations that cannot be used
+    denied_annotations:
+    - privileged
+
+    # List of annotations that must be defined
+    mandatory_annotations: []
+
+    # Annotations that are validate with user-defined RegExp
+    # Failing to comply with the RegExp resuls in the object
+    # being rejected
+    constrained_annotations:
+      priority: "[123]"
+      cost-center: "^cc-\\d+$"
+  rules:
+    - apiGroups:
+        - ""
+      apiVersions:
+        - v1
+      resources:
+        - pods
+        - namespaces
+      operations:
+        - CREATE
+        - UPDATE
+  mutating: false

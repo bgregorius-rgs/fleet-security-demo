@@ -1,2 +1,3 @@
 resources:
 - istio-enforcement.yaml
+- annotation-policy.yaml
