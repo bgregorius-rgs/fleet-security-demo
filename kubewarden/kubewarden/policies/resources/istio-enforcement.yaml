@@ -23,6 +23,7 @@ spec:
     - cattle-neuvector-system
     - carbide-stigatron-system
     - carbide-docs-system
+    - cis-operator-system
 
     # Excluded pods (based on labels)
     excluded_pod_labels: {}
