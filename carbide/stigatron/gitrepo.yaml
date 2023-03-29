@@ -9,4 +9,6 @@ spec:
   targets:
   - clusterGroup: secured
   paths:
-  - "./carbide/stigatron/helm"
+  - "./carbide/stigatron/cis/crd"
+  - "./carbide/stigatron/cis/operator"
+  - "./carbide/stigatron/stigatron"
