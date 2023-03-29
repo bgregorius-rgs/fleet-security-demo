@@ -2,3 +2,6 @@ docker:
   enabled: false
 k3s:
   enabled: true
+controller:
+  ranchersso:
+    enabled: true	
