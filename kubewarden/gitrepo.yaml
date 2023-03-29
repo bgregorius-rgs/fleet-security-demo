@@ -9,7 +9,7 @@ spec:
   targets:
   - clusterGroup: secured
   paths:
-  - "./kubewarden/kubewarden/cert-manager"
+  - "./kubewarden/cert-manager"
   - "./kubewarden/kubewarden/crds"
   - "./kubewarden/kubewarden/controller"
   - "./kubewarden/kubewarden/defaults"
