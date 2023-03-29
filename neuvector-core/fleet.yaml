@@ -7,5 +7,5 @@ helm:
   valuesFile:
   - values.yaml
 
-dependsOn:
-- name: neuvector-neuvector-crds 
+# dependsOn:
+# - name: neuvector-neuvector-crds 
