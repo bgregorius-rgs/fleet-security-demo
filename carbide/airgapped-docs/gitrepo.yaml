@@ -7,6 +7,9 @@ spec:
   repo: https://github.com/atoy3731/fleet-security-demo.git
   branch: main
   targets:
-  - clusterGroup: secured
+  - name: carbide
+    clusterSelector:
+      matchLabels:
+        carbide: enabled
   paths:
   - "./carbide/airgapped-docs/helm"
