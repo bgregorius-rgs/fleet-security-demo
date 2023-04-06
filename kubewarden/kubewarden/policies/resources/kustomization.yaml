@@ -1,4 +1,4 @@
 resources:
 # - istio-enforcement.yaml
-# - carbide-signature-enforcement.yaml
+- carbide-signature-enforcement.yaml
 - annotation-policy.yaml
