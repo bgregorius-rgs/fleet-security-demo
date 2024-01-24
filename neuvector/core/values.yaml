@@ -1,6 +1,6 @@
 global:
   cattle:
-    url: https://rancher-aws.atoy.dev
+    url: https://shift5-ra-ranchere-j01v1j1e2613-937372100.us-east-1.elb.amazonaws.com/
 
 docker:
   enabled: false
