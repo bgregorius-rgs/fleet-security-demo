@@ -6,6 +6,8 @@ helm:
   releaseName: neuvector-core
   valuesFiles:
   - values.yaml
+  # Makes helm skip the check for its own annotations
+  takeOwnership: true
 
 dependsOn:
 - name: neuvector-neuvector-crd
